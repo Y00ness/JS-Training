@@ -110,10 +110,8 @@ if (String(x).slice(0, 1) == 9) {
 
 // training
 
-var A1 = document.getElementById("jsResult");
+function showname() {
+  console.log("younes hoseini");
+}
 
-var A2 = [1, 2];
-A1.innerHTML = "";
-A1.innerHTML = A2;
-console.log(A2);
-console.log(A2[0]);
+console.log(Date());
