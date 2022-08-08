@@ -72,6 +72,31 @@ switch (x) {
   case 2:
     console.log("TWO");
 }
+//
+let num = 222;
+
+let library = {
+  111: {
+    name: "younes",
+    fmaily: " hoseini",
+  },
+  222: {
+    name: "mahya",
+    family: "mohammadi",
+  },
+};
+
+function iden(num) {
+  console.log(library[num].name);
+}
+switch (num) {
+  case 111:
+    iden(111);
+    break;
+  case 222:
+    iden(222);
+    break;
+}
 
 // Loop
 var x = ["One", "Two", "Three", "Four", "Five"];
@@ -113,5 +138,3 @@ if (String(x).slice(0, 1) == 9) {
 function showname() {
   console.log("younes hoseini");
 }
-
-console.log(Date());
