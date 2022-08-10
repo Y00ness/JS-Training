@@ -124,6 +124,47 @@ do {
   i++;
 } while (i > 5);
 
+// break & continue
+// break: jump out the loop and finish the loop
+// continue: jump out the loop but continue the loop
+res = document.getElementById("jsResult");
+for (i = 0; i < 10; i++) {
+  res.innerHTML += i;
+  if (i == 2) {
+    continue;
+  }
+  document.getElementById("jsResult").innerHTML += i;
+  if (i == 5) {
+    break;
+  }
+}
+//debuger
+// for debuge the code
+
+//try, catch, finally
+function showname(name) {
+  console.log(name);
+}
+
+try {
+  showname("younes");
+  if (true) {
+    try {
+      showname("try-1st");
+    } catch {
+      throw new Error("Error 403-bad request");
+    } finally {
+      showname("try-2st");
+    }
+  }
+} catch (err) {
+  showname("catch-1st");
+  console.error(err);
+  showname("catch-2st");
+} finally {
+  showname("The end");
+}
+
 res.innerHTML = "";
 var x = 09136128061;
 res.innerHTML += x + "<br>";
@@ -134,7 +175,16 @@ if (String(x).slice(0, 1) == 9) {
 }
 
 // training
-
-function showname() {
-  console.log("younes hoseini");
+function log(ob) {
+  console.log(ob);
 }
+
+const number = { "1st": "1" };
+log(number);
+if (true) {
+  let number = { three: 3 };
+  number.two = 2;
+  log(number);
+}
+
+log(number);
