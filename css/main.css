@@ -30,3 +30,33 @@ body header h1 {
   border-radius: 5px;
   overflow: auto;
 }
+
+.primary-info-form {
+  /* border: solid var(--mainDarkGrey) 5px; */
+  border-radius: 15px;
+  box-shadow: 0 0 10px 1px var(--mainGrey);
+  box-sizing: border-box;
+  padding: 10px;
+  /* background-color: var(--mainDarkGrey); */
+}
+
+.primary-info-form input {
+  background-color: var(--mainBlack);
+  border: none;
+  border-bottom: var(--mainGrey) 2px solid;
+  width: 20%;
+  transition: all 0.5s linear;
+}
+
+.primary-info-form input:focus {
+  background-color: var(--mainBlack);
+  border: none;
+  border-bottom: var(--mainDarkGreen) 2px solid;
+  width: 100%;
+  box-shadow: none;
+}
+
+.primary-info-form label {
+  font-weight: bold;
+  /* color: var(--mainGrey); */
+}

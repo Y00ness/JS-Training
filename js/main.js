@@ -165,6 +165,24 @@ try {
   showname("The end");
 }
 
+// def for forms
+function FormAction() {
+  alert("hello");
+}
+function CheckValue() {
+  let fname = document.forms["name-form"]["fname"].value;
+  // let fname = document.getElementById("fname").value;
+  let lname = document.forms["name-form"]["lname"].value;
+  // let lname = document.getElementById("lname").value;
+  if (fname.length != "" && lname.length != "") {
+    console.log("ok");
+    return true;
+  } else {
+    console.error("write sth");
+    return false;
+  }
+}
+
 res.innerHTML = "";
 var x = 09136128061;
 res.innerHTML += x + "<br>";

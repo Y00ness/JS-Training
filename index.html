@@ -33,10 +33,32 @@
         </button>
         <div id="jsResult" class="w-100 h-50 p-4">Result</div>
         <br />
-        <button onclick="showname()" class="btn-block btn-sm">test</button>
+        <div>
+          <!-- Form -->
+          <form action="#" name="name-form" class="primary-info-form">
+            <div class="mb-3 form-group">
+              <label for="fname">First name</label>
+              <input type="text" name="fname" id="fname" class="form-control" />
+            </div>
+            <div class="mb-2 form-group">
+              <label for="lname" class="">Last name</label>
+              <input type="text" name="lname" id="lname" class="form-control" />
+            </div>
+            <button
+              type="submit"
+              class="btn btn-dark btn-sm"
+              onclick="CheckValue()"
+            >
+              Send
+            </button>
+          </form>
+          <!-- End Form -->
+        </div>
       </section>
     </main>
-    <footer></footer>
+    <footer>
+      <br />
+    </footer>
 
     <!-- Optional JavaScript -->
     <script src="./js/main.js"></script>
