@@ -37,12 +37,30 @@
           <!-- Form -->
           <form action="#" name="name-form" class="primary-info-form">
             <div class="mb-3 form-group">
-              <label for="fname">First name</label>
-              <input type="text" name="fname" id="fname" class="form-control" />
+              <input
+                type="text"
+                name="fname"
+                id="fname"
+                class="form-control"
+                autocomplete="off"
+                required
+              />
+              <label class="name-label label-name" for="fname"
+                ><span class="content-name">First name</span></label
+              >
             </div>
             <div class="mb-2 form-group">
-              <label for="lname" class="">Last name</label>
-              <input type="text" name="lname" id="lname" class="form-control" />
+              <input
+                type="text"
+                name="lname"
+                id="lname"
+                class="form-control"
+                autocomplete="off"
+                required
+              />
+              <label for="lname" class="name-label"
+                ><span class="content-name">Last name</span></label
+              >
             </div>
             <button
               type="submit"

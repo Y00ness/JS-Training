@@ -128,7 +128,7 @@ do {
 // break: jump out the loop and finish the loop
 // continue: jump out the loop but continue the loop
 res = document.getElementById("jsResult");
-for (i = 0; i < 10; i++) {
+for (i = 0; i <= 10; i++) {
   res.innerHTML += i;
   if (i == 2) {
     continue;
@@ -191,6 +191,44 @@ if (String(x).slice(0, 1) == 9) {
 } else {
   res.innerHTML += "<br>" + false;
 }
+
+// new object by func
+
+function Info(name, family, age, height, gender) {
+  this.name = name;
+  this.family = family;
+  this.age = age;
+  this.height = height;
+  this.gender = gender;
+}
+function inform(name) {
+  console.log(name);
+}
+info;
+
+var person1 = new Info("younes", "hoseni", "25", "183", "male");
+console.log(person1);
+var person2 = new Info("yousef", "hoseni", 19, 180, "male");
+console.log(person2);
+
+document.getElementById("jsResult").innerHTML =
+  person1.name + "<br>" + person2.name;
+
+//function with undefined value
+function NoValue(a, b) {
+  if (a === undefined || b === undefined) {
+    console.error("Arg not define");
+    a = b = 0;
+  }
+  return a + b;
+}
+
+function NoValue1(a = 0, b = 0) {
+  return a + b;
+}
+
+console.log(NoValue(2, 2));
+console.log(NoValue1());
 
 // training
 function log(ob) {
