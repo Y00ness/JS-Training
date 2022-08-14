@@ -230,6 +230,17 @@ function NoValue1(a = 0, b = 0) {
 console.log(NoValue(2, 2));
 console.log(NoValue1());
 
+//arg in functions
+function PrintObject() {
+  for (i = 0; i < arguments.length; i++) {
+    console.log(arguments[i]);
+  }
+}
+
+var nameobject = ["younes", "yousef", "saeed"];
+PrintObject(nameobject);
+PrintObject("younes", "yousef");
+
 // training
 function log(ob) {
   console.log(ob);
