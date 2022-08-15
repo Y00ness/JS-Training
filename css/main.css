@@ -92,3 +92,14 @@ body header h1 {
 .form-group input:valid + .name-label .content-name {
   color: #61892f;
 }
+
+/* animation */
+.animation-bigbox {
+  height: 50px;
+  width: 100%;
+  background-color: var(--mainBlack);
+  margin-top: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 0 10px 1px var(--mainGrey);
+  box-sizing: border-box;
+}
