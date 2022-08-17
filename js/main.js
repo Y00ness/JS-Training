@@ -237,6 +237,14 @@ function PrintObject() {
   }
 }
 
+//animation
+let box = document.querySelector(".animation-bigbox .animation-box");
+
+let BoxLeft = function () {
+  box.style.left = "100px";
+  console.log("hiiiiiiiiiiiiii");
+};
+
 var nameobject = ["younes", "yousef", "saeed"];
 PrintObject(nameobject);
 PrintObject("younes", "yousef");
