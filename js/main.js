@@ -248,6 +248,7 @@ let BoxLeft = function () {
 var nameobject = ["younes", "yousef", "saeed"];
 PrintObject(nameobject);
 PrintObject("younes", "yousef");
+PrintObject("younes", "yousef");
 
 // training
 function log(ob) {
