@@ -264,3 +264,4 @@ if (true) {
 }
 
 log(number);
+log(number);
