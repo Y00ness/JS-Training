@@ -112,7 +112,8 @@ body header h1 {
   background-color: var(--mainGreen);
   opacity: 0.5;
   position: absolute;
-  left: 0px;
+  /* left: 0; */
+  right: calc(100% - 50px);
 }
 
 .animation-bigbox .animate {

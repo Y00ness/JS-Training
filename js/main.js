@@ -238,11 +238,20 @@ function PrintObject() {
 }
 
 //animation
-let box = document.querySelector(".animation-bigbox .animation-box");
 
 let BoxLeft = function () {
-  box.style.left = "100px";
-  console.log("hiiiiiiiiiiiiii");
+  let box = document.querySelector(".animation-bigbox .animation-box");
+  let XPara = 100;
+  let animate = setInterval(start, 10);
+  function start() {
+    if (XPara > 0) {
+      XPara += -1;
+      box.style.right = XPara + "%";
+    } else {
+      clearInterval(animate);
+    }
+    console.log(XPara);
+  }
 };
 
 var nameobject = ["younes", "yousef", "saeed"];
