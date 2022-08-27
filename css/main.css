@@ -107,13 +107,13 @@ body header h1 {
 
 .animation-box {
   height: 50px;
-  width: 50px;
+  width: 10%;
   border-radius: 15px;
   background-color: var(--mainGreen);
   opacity: 0.5;
   position: absolute;
   /* left: 0; */
-  right: calc(100% - 50px);
+  right: 90%;
 }
 
 .animation-bigbox .animate {
@@ -125,4 +125,20 @@ body header h1 {
   opacity: 0.75;
   padding: 0;
   text-align: center;
+}
+
+.box-image {
+  height: 50vh;
+  width: 100%;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  overflow: hidden;
+  border-radius: 15px;
+  box-shadow: 0 0 10px 1px var(--mainGrey);
+}
+.auto-image-slider button {
+  margin: 0 0.5rem;
+  box-shadow: 0 0 10px 1px var(--mainGrey);
+}
+#box-image {
 }

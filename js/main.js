@@ -236,17 +236,24 @@ function PrintObject() {
     console.log(arguments[i]);
   }
 }
+var nameobject = ["younes", "yousef", "saeed"];
+PrintObject(nameobject);
+PrintObject("younes", "yousef");
 
 //animation
 
 let BoxLeft = function () {
   let box = document.querySelector(".animation-bigbox .animation-box");
-  let XPara = 100;
+  let XForward = 90;
+  let XBackward = 0;
   let animate = setInterval(start, 10);
   function start() {
-    if (XPara > 0) {
-      XPara += -1;
-      box.style.right = XPara + "%";
+    if (XForward > 0) {
+      XForward += -1;
+      box.style.right = XForward + "% ";
+    } else if (XBackward < 90) {
+      XBackward += 1;
+      box.style.right = XBackward + "% ";
     } else {
       clearInterval(animate);
     }
@@ -254,10 +261,13 @@ let BoxLeft = function () {
   }
 };
 
-var nameobject = ["younes", "yousef", "saeed"];
-PrintObject(nameobject);
-PrintObject("younes", "yousef");
-PrintObject("younes", "yousef");
+// img-box
+let images = [
+  "./media/plant01.jpg",
+  "./media/plant02.jpg",
+  "./media/plant03.jpg",
+  "./media/plant04.jpg",
+];
 
 // training
 function log(ob) {
