@@ -269,6 +269,19 @@ let images = [
   "./media/plant04.jpg",
 ];
 
+let image_slider = "";
+function slider_start() {
+  image_slider = setInterval(change_images, 1000);
+  console.log("start");
+}
+function slider_stop() {
+  clearInterval(image_slider);
+  console.log("stop");
+}
+
+function change_images() {
+  console.log("change");
+}
 // training
 function log(ob) {
   console.log(ob);
