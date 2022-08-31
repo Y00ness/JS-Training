@@ -280,7 +280,8 @@ function slider_stop() {
 }
 
 function change_images() {
-  console.log("change");
+  let i =0;
+   
 }
 // training
 function log(ob) {
