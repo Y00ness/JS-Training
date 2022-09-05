@@ -269,20 +269,34 @@ let images = [
   "./media/plant04.jpg",
 ];
 
-let image_slider = "";
-function slider_start() {
-  image_slider = setInterval(change_images, 1000);
-  console.log("start");
-}
-function slider_stop() {
-  clearInterval(image_slider);
-  console.log("stop");
-}
+// let image_slider = "";
+// function slider_start() {
+//   image_slider = setInterval(change_images, 1000);
+//   console.log("start");
+// }
+// function slider_stop() {
+//   clearInterval(image_slider);
+//   console.log("stop");
+// }
 
-function change_images() {
-  let i =0;
-   
-}
+// function change_images() {
+//   console.log("start");
+//   let i = 0;
+// }
+
+const start_btn = document.querySelector("#start-slider");
+const stop_btn = document.getElementById("stop-slider");
+
+let slider = "";
+start_btn.addEventListener("click", () => {
+  slider = setInterval(() => {
+    console.log("start");
+  }, 1000);
+});
+
+stop_btn.addEventListener("click", () => {
+  clearInterval(slider);
+});
 // training
 function log(ob) {
   console.log(ob);
