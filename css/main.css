@@ -135,7 +135,17 @@ body header h1 {
   overflow: hidden;
   border-radius: 15px;
   box-shadow: 0 0 10px 1px var(--mainGrey);
+  position: relative;
 }
+
+#box-image1 {
+  min-width: 100%;
+  opacity: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
 .auto-image-slider button {
   margin: 0 0.5rem;
   box-shadow: 0 0 10px 1px var(--mainGrey);

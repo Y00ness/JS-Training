@@ -279,19 +279,38 @@ let images = [
 //   console.log("stop");
 // }
 
-// function change_images() {
-//   console.log("start");
-//   let i = 0;
-// }
-
 const start_btn = document.querySelector("#start-slider");
 const stop_btn = document.getElementById("stop-slider");
+const image = document.getElementById("box-image");
 
 let slider = "";
+let image_num = 1;
 start_btn.addEventListener("click", () => {
+  image.style.opacity = "0";
+  image.style.transition = "all 0.3s ease";
+  setTimeout(() => {
+    image.src = images[image_num];
+    image_num += 1;
+    image.style.opacity = "1";
+    image.style.transition = "all 1s linear";
+  }, 300);
+  if (image_num >= images.length) {
+    image_num = 0;
+  }
+  clearInterval(slider);
   slider = setInterval(() => {
-    console.log("start");
-  }, 1000);
+    image.style.opacity = "0";
+    image.style.transition = "all 0.3s linear";
+    setTimeout(() => {
+      image.src = images[image_num];
+      image_num += 1;
+      image.style.opacity = "1";
+      image.style.transition = "all 1s linear";
+    }, 300);
+    if (image_num >= images.length) {
+      image_num = 0;
+    }
+  }, 5000);
 });
 
 stop_btn.addEventListener("click", () => {
