@@ -316,6 +316,17 @@ start_btn.addEventListener("click", () => {
 stop_btn.addEventListener("click", () => {
   clearInterval(slider);
 });
+
+image_width = document.querySelector(
+  ".auto-image-slider .box-image"
+).clientWidth;
+image_height = document.querySelector(
+  ".auto-image-slider .box-image"
+).clientHeight;
+
+console.log(image_width);
+console.log(image_height);
+
 // training
 function log(ob) {
   console.log(ob);
