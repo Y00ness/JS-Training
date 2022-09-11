@@ -341,4 +341,5 @@ if (true) {
 }
 
 log(number);
-log(number);
+
+document.getElementById("test").classList.add("test");
