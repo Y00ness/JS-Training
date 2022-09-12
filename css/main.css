@@ -157,9 +157,14 @@ body header h1 {
   height: 10vh;
   border-radius: 15px;
   box-shadow: 0 0 10px 1px var(--mainGrey);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  font-weight: bold;
 }
 
-.test {
-  background-color: var(--mainDarkGreen);
-  opacity: 0.3;
+.mousedown {
+  opacity: 0.8;
+  transition: all 2s;
 }
