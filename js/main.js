@@ -327,6 +327,20 @@ image_height = document.querySelector(
 console.log(image_width);
 console.log(image_height);
 
+// Mouseup - Mousedown
+let clickBlock = document.querySelector("#clickBlock");
+clickBlock.onmousedown = () => {
+  clickBlock.classList.add("mousedown");
+  clickBlock.style.background = "var(--mainDarkGreen)";
+  clickBlock.style.color = "white";
+  clickBlock.innerHTML = "<p class='mb-0'>Mouse down</p>";
+};
+clickBlock.onmouseup = () => {
+  clickBlock.style.background = "var(--mainBlack)";
+  clickBlock.innerHTML = "<p class='mb-0'>Mouse up</p>";
+  clickBlock.style.color = "var(--mainDarkGreen)";
+};
+// End Mouseup - Mousedown
 // training
 function log(ob) {
   console.log(ob);
@@ -341,18 +355,3 @@ if (true) {
 }
 
 log(number);
-
-// document.getElementById("test").classList.add("test");
-let clickBlock = document.querySelector("#clickBlock");
-clickBlock.onmousedown = () => {
-  clickBlock.classList.add("mousedown");
-  clickBlock.style.background = "var(--mainDarkGreen)";
-  clickBlock.style.color = "white";
-  clickBlock.innerHTML = "<p class='mb-0'>Mouse down</p>";
-};
-clickBlock.onmouseup = () => {
-  clickBlock.style.background = "var(--mainBlack)";
-  clickBlock.innerHTML = "<p class='mb-0'>Mouse up</p>";
-  clickBlock.style.color = "var(--mainDarkGreen)";
-};
-// document.querySelector("#test").classList.add("test");
