@@ -342,6 +342,7 @@ clickBlock.onmouseup = () => {
 };
 // End Mouseup - Mousedown
 // training
+
 function log(ob) {
   console.log(ob);
 }
