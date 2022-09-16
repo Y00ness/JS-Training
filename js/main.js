@@ -356,3 +356,5 @@ if (true) {
 }
 
 log(number);
+
+let name = prompt("hi");
